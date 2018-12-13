@@ -1,0 +1,360 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*=================
+ AGE VARIFICATION
+==================*/
+#ageVarification {
+    display: none;
+}
+
+/*=================
+ TESTING ROOM SHOW
+==================*/
+#testingShow {
+    display: none;
+    background: #40E0D0;
+}
+
+/*=====================
+ WHERE TO FIND US SHOW
+======================*/
+#whereToFindUs {
+    display: none;
+    background: #40E0D0;
+}
+
+
+/*==============
+    MENU BUTTON 
+===============*/
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 99;
+  }
+
+/*==============
+    RESPONSIVE 
+===============*/
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+/*==============
+    READ MORE 
+===============*/
+span {
+    display: inline;
+  }
+#more {
+    display: none;
+}
+#readLink {
+    color: blue;
+    font-size: 24px;
+}
+/*==============
+  BEER SHOW 
+===============*/
+#beerShowHide {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    background : #40E0D0 ;
+    
+}
+#clickMe {
+    color: white;
+    font-size: 15px;
+}
+/*==============
+       BASE 
+===============*/
+html, body, br, hr, div, span, a, object, iframe, ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, blockquote, q, address,
+small, big, cite, dfn, ins, del, i, em, b, strong, sup, sub, strike, pre, code, samp, kbd, var, tt, form, fieldset, legend, label,
+input, textarea, option, .nobox {background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+body{
+    background-color: #f0f0f0;
+}
+/*==============
+    CLEAR FLOAT 
+===============*/
+.clear {clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
+/*=================
+    DEFAULT HEADER 
+==================*/
+h1, h2, h3, h4, h5, h6 {}
+/*====================
+    DEFAULT PARAGRAPH 
+=====================*/
+p { color: #111; font-size: 14px; line-height: 24px;}
+
+/*=================
+  SPECIFIC HEADER 
+==================*/
+h1 {font-weight:bold; font-size:36px; color:#111; }
+h2 {font-weight:bold; font-size:24px; color:#111; line-height: 46px;}
+h3 {font-size:18px; }
+h4 {font-size:16px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+
+
+/*=================
+    OTHER   
+==================*/
+strong {font-weight: bold;}
+hr {border:0 #000 solid; border-top-width: 1px; clear: both; height: 0;}
+ol {list-style: decimal;}
+ul {list-style: disc;}
+
+
+/*=================
+    DEFAULT LINK 
+==================*/
+a {color: #000000; font-size: 16px; text-decoration:none;}
+a:hover {text-decoration:underline}
+a:active {color: #e8941a;}
+a:focus {outline: none;}
+a.current{color: #e8941a;}
+
+/*=================
+    PAGE LAYOUT 
+==================*/
+body{font-family: Roboto;}
+#full_wrapper{min-height: 100%; height: auto; height: 100%; margin: 0 auto -135px; }
+.wrapper{ max-width:1100px; margin:0 auto;}
+.content{ margin:0 auto; padding:0; width:100%;}
+
+/*=================
+     HEADER 
+==================*/
+header .wrapper{ position:relative; }
+header .logo{width: 100px;}
+header .logo img{width: 150px;}
+header section h1{color: black;font-size: 32px;}
+
+/*=================
+    NAVIGATION  
+==================*/
+.nav {
+  height: 125px;
+  width: 100%;
+  background-color: darkgray;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+    width: 100%;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+    color: #201a16;
+  padding: 10px 10px 10px 10px;
+}
+.nav > .nav-header > .nav-title >a > img {
+ width: 150px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 50px 10px 13px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav > .nav-links > a:hover {
+    background-color: #201a16;
+          color: #fff;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:1135px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 35px;
+      z-index: 56;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 28px;
+    height: 35px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+      cursor: pointer;
+
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #1f1f1f;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s;
+    overflow-y: hidden;
+    left: 0px;
+  }
+ }
+
+/*=================
+    ABOUT US 
+==================*/
+.about_us{text-align: center;background: #f0f0f0;box-sizing: border-box;width: 100%;}
+.about_us h1{font-size:26px;color: #fff;padding: 65px 0px;text-transform: uppercase;background-color: #201a16;letter-spacing: 4px;word-spacing: 1px;}
+.about_us p{font-size: 18px;color: #1f1f1f;font-size: 16px;padding: 0px 35px;padding:100px 65px;line-height: 28px;}
+
+/*=================
+       BEERS  
+==================*/
+.beers{font-size: 0px;position: relative;}
+/*=================
+    BEERS BOX 
+==================*/
+.beers .box{width: 50%;display: inline-block;vertical-align: top;padding: 1%;box-sizing: border-box;text-align: center;}
+.pb{padding: 0 1.5%;box-sizing: border-box;}
+.beers .box h2{font-size: 26px;line-height: 50px;margin-bottom: 5px;} 
+.beers .box h3{font-size: 20px;line-height: 30px;margin-bottom: 6px;font-weight: 400;}
+.beers .box span{font-size: 20px;}
+.beers .box p{padding: 1%;box-sizing: border-box;margin-bottom: 10px;}
+/*=================
+    BEERS HEADING 
+==================*/
+.beers .heading{padding: 65px 0px;text-align: left;background:url(../images/can%20foam%20pic.jpg);background-size: cover;position: relative;background-attachment: fixed;}
+.beers .heading h2{font-size: 50px;padding-left: 20px;line-height: 72px;color: #fff;z-index: 5;}
+.beers .heading p{font-size: 24px;padding-left: 20px;line-height: 38px;letter-spacing: 3px; word-spacing: 2px;color: #fff;}
+.beers .line_up,.beers .Seasonal_Releases{margin:  60px 0px;}
+
+/*===================
+    THE TESTING ROOM 
+====================*/
+.the_testing_room{text-align: center;}
+.the_testing_room .heading{padding: 65px 0px;text-align: left;background:url(../images/can%20foam%20pic.jpg);background-size: cover;position: relative;background-attachment: fixed;}
+.the_testing_room .heading h2{font-size: 50px;padding-left: 20px;line-height: 72px;color: #fff;z-index: 5;}
+.the_testing_room .heading p{font-size: 24px;padding-left: 20px;line-height: 38px;letter-spacing: 3px; word-spacing: 2px;color: #fff;}
+
+/*=================
+    WHAT WE DO
+==================*/
+.the_testing_room .what_we_do{padding: 60px 120px;}
+.the_testing_room .what_we_do h2{font-size: 30px;}
+.the_testing_room .what_we_do p{font-size: 16px;line-height: 24px;padding: 10px;margin: 20px 0px;}
+
+
+/*=================
+    MORE INFO 
+==================*/
+.the_testing_room .more_info{padding: 60px;background-color: #40E0D0;}
+.the_testing_room .more_info h2{font-size: 45px;}
+.the_testing_room .more_info span{font-weight: 300;font-style: italic;padding-bottom: 30px;display: inline-block;font-size: 20px;}
+.the_testing_room .more_info h3{font-size: 26px;padding: 20px;border-bottom: 1px solid #201c18;}
+.the_testing_room .more_info h5{font-size: 24px;padding:20px;}
+.the_testing_room .more_info ul li{list-style: none;line-height: 40px;color: #000;}
+.the_testing_room .more_info p{font-weight: 700;font-size: 12px;}
+
+/*=================
+    RESTAURANT  
+==================*/
+.the_testing_room p{padding: 0px 30px;}
+.the_testing_room .Restaurant{text-align: left;padding: 50px 0px;width: 70%;}
+.the_testing_room .Restaurant h3{font-size: 34px;margin-bottom: 30px;}
+.the_testing_room .Restaurant p{padding: 0px;line-height: 30px;text-align: left;font-size: 17px;}
+.the_testing_room .shop{text-align: left;width: 70%;margin-bottom: 50px;padding: 50px 0;}
+.the_testing_room .shop h3{font-size: 34px;margin-bottom: 30px;}
+.the_testing_room .shop p{padding: 0px;line-height: 30px;font-size: 17px;margin-bottom: 30px;}
+
+/*=================
+       ARTIST  
+==================*/
+.Artist{background-color: #f0f0f0;}
+.Artist .wrapper{box-sizing: border-box;margin: 0 auto;width: 500px;margin: 0 auto;}
+.Artist h2{text-align: center;letter-spacing: 3px;word-spacing: 2px;border-bottom: 1px solid #eee;line-height: 60px;}
+.Artist p{font-size: 17px;line-height: 26px;padding: 20px 0px;}
+.Artist h3{margin: 20px 0px;}
+.Artist h3 a{color: #949494;}
+.Artist h3 a:hover{color: #000;}
+
+/*=================
+       STORY  
+==================*/
+.story p{margin-bottom: 50px;padding: 0 20px;}
+.story h4{margin-top: 50px;font-size: 36px;font-weight: normal;text-align: center;margin-bottom: 20px;}
+.story .heading{padding: 65px 0px;text-align: left;background-size: cover;position: relative;background-attachment: fixed;background-color: #201a16;}
+.story .heading h2{font-size: 46px;padding-left: 20px;line-height: 72px;color: rgba(255,255,255,1);z-index: 5;letter-spacing: 4px;word-spacing: 2px;}
+.story .heading h5{font-size: 26px;padding-left: 20px;line-height: 72px;color: rgba(255,255,255,0.9);z-index: 5;letter-spacing: 4px;word-spacing: 2px;}
+
+/*=================
+    CONTACT US  
+==================*/
+.contact_us .heading{padding: 45px 0px;text-align: left;background-size: cover;position: relative;background-attachment: fixed;background-color: #201a16;}
+.contact_us .heading h2{font-size: 46px;padding-left: 20px;line-height: 52px;color: rgba(255,255,255,1);z-index: 5;letter-spacing: 4px;word-spacing: 2px;}
+.contact_us .heading h3{font-size: 26px;padding-left: 20px;line-height: 72px;color: rgba(255,255,255,0.9);z-index: 5;letter-spacing: 4px;word-spacing: 2px;}
+.contact_us .working_hour{text-align: center;margin-bottom: 30px;}
+.contact_us .working_hour h2{font-size: 32px;padding: 30px;}
+.contact_us .working_hour h3{font-size: 24px;padding: 10px;}
+.contact_us .working_hour h4{font-size: 16px;padding: 10px;}
+.contact_us .working_hour h5{font-size: 22px;padding: 10px;}
+.contact_us .working_hour p{font-size: 16px;padding: 10px;}
+
+/*=================
+       FOOTER  
+==================*/
+.footer{background: #201a16;color: #fff;}
+.footer p{color: white;padding:5% 20%;text-align: center;text-transform: uppercase;}
+.footer .social{text-align: center;}
+.footer .social a {padding: 10px;display: inline-block;transition: 0.5s ease all;}
+.footer .social a img{width: 30px;border-radius: 50%;overflow: hidden;}
+.footer .social a:hover img{opacity: 0.7;}
+
+/*=================
+       OTHER  
+==================*/
+.heading,.heading{position: relative;}
+.heading:after,.heading:after{position: absolute;content: '';width: 100%;height: 100%;top:0px;bottom: 0px;left: 0px;right: 0px;background-color: rgba(0,0,0,0.8);}
+.heading p,.heading h2{position: relative;z-index: 99;}
+.locations{text-align: center;}
+.locations .find_us{display: inline-block;vertical-align: top;padding: 0px 10px;margin: 30px 0px;width: 20%;}
+.locations  h5{font-size: 36px;text-transform: uppercase;margin-top: 80px;margin-bottom: 30px}
+.locations .location_wrapper{max-width: 500px;margin: 0 auto;}
+
+.locations .heading{padding: 45px 0px;text-align: left;background-size: cover;position: relative;background-attachment: fixed;background-color: #201a16;}
+/*.beers .heading::before{content: '';position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,0.3);z-index: 0;}*/
+.locations .heading h2{font-size: 46px;padding-left: 20px;line-height: 52px;color: rgba(255,255,255,1);z-index: 5;letter-spacing: 4px;word-spacing: 2px;color: #ffffff;}
+.locations .heading h3{font-size: 26px;padding-left: 20px;line-height: 72px;color: rgba(255,255,255,0.9);z-index: 5;letter-spacing: 4px;word-spacing: 2px;}
+
+.locations .location_wrapper{margin-top: 20px;}
+.contact_us{margin-top: 50px;}
+
